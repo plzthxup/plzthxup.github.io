@@ -20,6 +20,8 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
+<!-- Valine - 一款快速、简洁且高效的无后端评论系统。 -->
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
   <body>
@@ -76,21 +78,13 @@
 </article>
 
 <!-- 评论插件 -->
-
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <!--Valine 的核心代码库:-->
-    <script src="./dist/Valine.min.js"></script>
-      <div class="comment"></div>
+<div id="vcomments"></div>
     <script>
         new Valine({
-            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-            av: AV, 
-            el: '.comment', // 
-            app_id: NdndGtgBPg86uRTJMyti0yOk-gzGzoHsz
-            app_key: V7jdtYQlQ2lzYTc1BWm442yO
-   
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
-        });
+            el: '#vcomments',
+            appId: 'NdndGtgBPg86uRTJMyti0yOk-gzGzoHsz',
+            appKey: 'V7jdtYQlQ2lzYTc1BWm442yO'
+        })
     </script>
 
 <!-- 评论插件 -->
