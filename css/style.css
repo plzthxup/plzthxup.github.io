@@ -5,7 +5,7 @@ html,
 body,
 .container {
   height: 100%;
-  font-family: Monaco, monospace, Hiragino Sans GB, Microsoft YaHei, WenQuanYi, Airal, sans-serif;
+  font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi, Airal, sans-serif;
   letter-spacing: 0.01rem;
 }
 .container {
@@ -358,7 +358,7 @@ footer .author {
   font-size: 12px;
   padding: 10px;
   position: fixed;
-  right: 35px;
+  right: 0px;
   top: 129px;
 }
 .toc-article .toc-close {
@@ -474,7 +474,7 @@ footer .author {
   border: 1px solid #ddd;
   border-right: none;
   position: fixed;
-  right: 40px;
+  right: 0px;
   text-align: center;
   background-color: #f9f9f9;
 }
