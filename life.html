@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  
+  <title>life - Up++日常记录</title>
+  <link rel="icon" href="https://i.imgur.com/SrZt9VU.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="keywords" content=搭建博客>
+  
+  
+  
+    <link rel="alternate" href="/true " title="Up++日常记录" type="application/atom+xml">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Valine - 一款快速、简洁且高效的无后端评论系统。 -->
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<!-- Valine - 一款快速、简洁且高效的无后端评论系统。 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+  <div class="blog-title">
+    <a href="/" class="logo">Up++日常记录</a>
+    <div class="subtitle"></div>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">首页</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="menu-item-link">搭建博客</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/about" class="menu-item-link">关于</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+<!--    <div id="toc" class="toc-article">
+ <div class="toc-title">目录</div>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li></ol>
+  </div>  -->
+ <!--  新增目录 -->
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">1.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">2.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">3.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-number">4.</span> <span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-number">5.</span> <span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li></ol>
+         </div>
+
+   <script type="text/javascript">
+    function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+ <!--  新增目录 -->
+
+<article class="post">
+  <div class="post-title">
+    <h1 class="article-title">life</h1>
+  </div>
+  
+  <!-- 文章目录 -->
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
+在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
+添加置顶
+</span></a></li></ol>
+
+  <div class="post-content">
+    <p>方法 2<br>经过简单的排查，发现现在编译出的 HTML 内容中，如下的 markdown 标题：</p>
+<h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p>原来会被编译成 </p><h2 id="title">title</h2><p></p>
+<p>而现在会被编译成 </p><h2 id="title"><span id="title">title</span></h2><p></p>
+<p>推测因此导致了生成 TOC 时，H2 元素的 id 属性为未定义，进而导致 TOC 中的锚点也为未定义的问题。</p>
+<p>以上的变更，是包 hexo-toc 的变更导致的，具体应该是这次提交。</p>
+<p>但是目前仅仅是初步排查，暂时没有确定问题就是出在 hexo-toc 上，仅仅是认为这个修改可能会导致后续某些生成 toc 的代码的不兼容。</p>
+<p>因此目前阶段，进入你项目根目录的 node_modules\hexo-toc\lib\filter.js 中，把 28 行～31 行修改为：</p>
+<p>$title.attr(‘id’, id);<br>// $title.children(‘a’).remove();<br>// $title.html( ‘<span id="' + id + '">‘ + $title.html() + ‘</span>‘ );<br>// $title.removeAttr(‘id’);<br>也就是恢复这次提交，保留旧版本，仅保留 28 行，其他的内容注释掉。</p>
+<p>这样的话，生成的 TOC 应该就是正常的了。</p>
+<p>ps：另外需要注意的是，编译的 markdown 貌似有缓存，因此修改后，你可以再新建一篇文章后再生成，用新文章测试以上手段是否有效修复。旧文章由于缓存问题，可能不会生成新的 HTML（这部分也只是看到现象，暂时没有进行详细了解）。如果新文章确实能够修复此问题，再处理旧文章即可。</p>
+<p>根本原因<br>实际上这是由包 hexo-toc 引起的问题。这个包更新之后产生了不兼容的情况。有些童鞋没有这个问题可能是因为你使用的是旧版本。</p>
+<p>在上面提到的 hexo-toc 的提交中，在 HTML 生成前， hexo-toc 去掉了 </p><h2 id="等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"> 等标签的 id 属性，将其放入内部新生成的 <span>…</span> 中。而 hexo 本身生成 toc 的时候，取得仍是 <h2 id="标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"> 标签的 id，因此得到的是 undefined。具体代码在这里<p></p>
+<p>在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。</p>
+<p>添加置顶</p>
+</h2></h2>
+  </div>
+  <div class="post-meta">
+    <span class="post-time" style="color:#646060;font-size:13px">2020-07-04</span>
+  </div>
+
+  <div class="post-footer">
+    
+      <ul class="post-tag-list" itemprop="keywords"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="tag">搭建博客</a></li></ul>
+    
+
+    <a href="#top" class="top">返回顶部</a>
+  </div>
+
+
+
+<!-- id 将作为查询条件
+<span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
+    <em class="post-meta-item-text">阅读量 </em>
+    <i class="leancloud-visitors-count">1000000</i>
+</span> -->
+
+</article>
+
+<!-- 评论插件 -->
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'NdndGtgBPg86uRTJMyti0yOk-gzGzoHsz',
+            appKey: 'V7jdtYQlQ2lzYTc1BWm442yO'
+        })
+
+        visitor: true // 阅读量统计
+    </script>
+
+<!-- 评论插件 -->
+
+
+
+
+
+<footer>
+  2020
+  <span class="author">
+    Up++
+  </span>
+
+
+
+  
+
+</footer>
+
+
+
+
+    </div>
+  </body>
+</html>
