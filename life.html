@@ -20,11 +20,8 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
-<!-- Valine - 一款快速、简洁且高效的无后端评论系统。 -->
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<!-- Valine - 一款快速、简洁且高效的无后端评论系统。 -->
 
-
+ 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
   <body>
@@ -62,16 +59,7 @@
 </header>
 
 
-<!--    <div id="toc" class="toc-article">
- <div class="toc-title">目录</div>
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
-在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
-添加置顶
-</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
-在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
-添加置顶
-</span></a></li></ol>
-  </div>  -->
+
  <!--  新增目录 -->
   <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
           <span class="btn-bg"></span>
@@ -80,14 +68,19 @@
     <div id="toc-article" class="toc-article">
         <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
         <strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">1.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">2.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">3.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-number">4.</span> <span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">1.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">2.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-number">3.</span> <span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-number">4.</span> <span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
 在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
 添加置顶
 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-number">5.</span> <span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
 在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
 添加置顶
-</span></a></li></ol>
-         </div>
+</span></a></li></ol> 
+            
+            
+          <p><strong class="toc-title"><a href="#top" >回到顶部</a></strong>  </p>
+    </div>
+    
+        
 
    <script type="text/javascript">
     function showToc(){
@@ -111,17 +104,19 @@
   </div>
   
   <!-- 文章目录 -->
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
+<!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title"><span class="toc-text">title</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等标签的-id-属性将其放入内部新生成的-中-而-hexo-本身生成-toc-的时候取得仍是-标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 等标签的 id 属性，将其放入内部新生成的 … 中。而 hexo 本身生成 toc 的时候，取得仍是  标签的 id，因此得到的是 undefined。具体代码在这里
 在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
 添加置顶
 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签的-id因此得到的是-undefined-具体代码在这里在这里做兼容的修复应该也是可以的不过我并没有尝试有兴趣的可以尝试一下-添加置顶"><span class="toc-text"> 标签的 id，因此得到的是 undefined。具体代码在这里
 在这里做兼容的修复应该也是可以的，不过我并没有尝试，有兴趣的可以尝试一下。
 添加置顶
-</span></a></li></ol>
+</span></a></li></ol> -->
 
   <div class="post-content">
-    <p><img src="pic.atobe.cn/picgo/20200706085524.JPG"><br>方法 2<br>经过简单的排查，发现现在编译出的 HTML 内容中，如下的 markdown 标题：</p>
-<h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p>原来会被编译成 </p><h2 id="title">title</h2><p></p>
+    <img class="pic.atobe.cn&#x2F;picgo&#x2F;20200706085524.JPG">
+
+<p>pic.atobe.cn/picgo/20200706085524.JPG<br>方法 2<br>经过简单的排查，发现现在编译出的 HTML 内容中，如下的 markdown 标题：</p>
+<h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p><img src="http://pic.atobe.cn/picgo/20200706093503.JPG"><br>原来会被编译成 </p><h2 id="title">title</h2><p></p>
 <p>而现在会被编译成 </p><h2 id="title"><span id="title">title</span></h2><p></p>
 <p>推测因此导致了生成 TOC 时，H2 元素的 id 属性为未定义，进而导致 TOC 中的锚点也为未定义的问题。</p>
 <p>以上的变更，是包 hexo-toc 的变更导致的，具体应该是这次提交。</p>
@@ -148,33 +143,32 @@
     <a href="#top" class="top">Back to Top</a>
   </div>
 
-
-
-<!-- id 将作为查询条件
-<span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
-    <em class="post-meta-item-text">阅读量 </em>
-    <i class="leancloud-visitors-count">1000000</i>
-</span> -->
-
 </article>
 
 <!-- 评论插件 -->
-<div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'NdndGtgBPg86uRTJMyti0yOk-gzGzoHsz',
-            appKey: 'V7jdtYQlQ2lzYTc1BWm442yO'
-        })
 
-        visitor: true // 阅读量统计
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <div id="vcomments"></div>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'NdndGtgBPg86uRTJMyti0yOk-gzGzoHsz',
+        appKey: 'V7jdtYQlQ2lzYTc1BWm442yO',
+        notify:false, 
+        verify:false, 
+        avatar:'mp', 
+        placeholder: '风过留痕，最好带上邮箱！' 
+    });
     </script>
 
+
+
+
+
+
+
+
 <!-- 评论插件 -->
-
-
-
-
 
 <footer>
   © 2020
@@ -189,6 +183,11 @@
   <span style=" float:right" class="author"   >
   <a href="/" target="_blank">Home</a>
   </span>
+
+
+
+
+
 </footer>
 
 
