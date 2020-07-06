@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   
   <title>life - Up++日常记录</title>
-  <link rel="icon" href="https://i.imgur.com/SrZt9VU.jpg" type="image/x-icon">
+  <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   
   <meta name="keywords" content=搭建博客>
@@ -120,7 +120,7 @@
 </span></a></li></ol>
 
   <div class="post-content">
-    <p>方法 2<br>经过简单的排查，发现现在编译出的 HTML 内容中，如下的 markdown 标题：</p>
+    <p><img src="pic.atobe.cn/picgo/20200706085524.JPG"><br>方法 2<br>经过简单的排查，发现现在编译出的 HTML 内容中，如下的 markdown 标题：</p>
 <h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><p>原来会被编译成 </p><h2 id="title">title</h2><p></p>
 <p>而现在会被编译成 </p><h2 id="title"><span id="title">title</span></h2><p></p>
 <p>推测因此导致了生成 TOC 时，H2 元素的 id 属性为未定义，进而导致 TOC 中的锚点也为未定义的问题。</p>
