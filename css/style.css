@@ -358,7 +358,7 @@ footer .author {
   font-size: 12px;
   padding: 10px;
   position: fixed;
-  right: 40px;
+  right: 0px;
   top: 129px;
 }
 .toc-article .toc-close {
@@ -473,7 +473,7 @@ footer .author {
   padding: 4px 6px 8px 5px;
   border: 1px solid #ddd;
   position: fixed;
-  right: 40px;
+  right: 0px;
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -482,7 +482,6 @@ footer .author {
   display: block;
   width: 16px;
   height: 14px;
-  background: url("http://7xtawy.com1.z0.glb.clouddn.com/show.png") no-repeat;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
@@ -508,6 +507,11 @@ footer .author {
 .toc-article ol,
 .toc-article ul {
   margin: 10px 0;
+}
+@media screen and (max-width: 1000px) {
+  .toc-article {
+    display: none;
+  }
 }
 @-moz-keyframes cd-bounce-1 {
   0% {
