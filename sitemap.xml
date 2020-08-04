@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://atobe.cn/article.html</loc>
+    
+    <lastmod>2020-08-04T06:17:28.245Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://atobe.cn/life.html</loc>
+    
+    <lastmod>2020-08-04T06:16:54.180Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://atobe.cn/hello-world.html</loc>
+    
+    <lastmod>2020-08-04T06:07:57.264Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://atobe.cn/heimei.html</loc>
+    
+    <lastmod>2020-08-03T14:50:10.053Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://atobe.cn/Link/index.html</loc>
     
     <lastmod>2020-07-07T04:44:33.274Z</lastmod>
@@ -12,41 +40,6 @@
     <loc>https://atobe.cn/About/index.html</loc>
     
     <lastmod>2020-07-07T04:37:24.781Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/categories/index.html</loc>
-    
-    <lastmod>2020-07-06T07:31:26.985Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/article.html</loc>
-    
-    <lastmod>2020-07-06T07:23:05.735Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/life.html</loc>
-    
-    <lastmod>2020-07-06T01:35:43.405Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/hello-world.html</loc>
-    
-    <lastmod>2020-07-06T00:37:09.379Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/tags/index.html</loc>
-    
-    <lastmod>2020-07-04T01:43:23.302Z</lastmod>
     
   </url>
   
