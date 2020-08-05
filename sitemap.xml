@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://atobe.cn/About/index.html</loc>
+    
+    <lastmod>2020-08-05T20:46:07.659Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://atobe.cn/article.html</loc>
     
     <lastmod>2020-08-04T06:17:28.245Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://atobe.cn/Link/index.html</loc>
     
     <lastmod>2020-07-07T04:44:33.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atobe.cn/About/index.html</loc>
-    
-    <lastmod>2020-07-07T04:37:24.781Z</lastmod>
     
   </url>
   
