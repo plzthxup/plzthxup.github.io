@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  
+  <title>Up++日常记录</title>
+  <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="keywords" content=>
+  
+  
+  
+    <link rel="alternate" href="/true " title="Up++日常记录" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- 支持ie8 -->
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/respond.min.js"></script>
+
+  <!-- code页面计算 -->
+  <script src="/js/clipboard.min.js"></script>
+  <script src="/js/seek_password.js"></script>
+  <script src="/js/md5.min.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+  <div class="blog-title">
+    <a href="/" class="logo">Up++日常记录</a>
+    <div class="subtitle"></div>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/tags/Script/" class="menu-item-link">Script</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/tags/books/" class="menu-item-link">Books</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/Link" class="menu-item-link">Link</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/Code/index.html" class="menu-item-link">Code</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/About" class="menu-item-link">About</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/null" class="menu-item-link">Download</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+<div class="page">
+  <div class="page-title">
+    <h1 class="article-title"></h1>
+  </div>
+  <div class="page-content">
+    <br>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="input-field col-12 col-sm-12 col-md-8 col-lg-6">
+      <b><label for="code">网站密码设计器：</label></b>
+        <form>
+			<div class="form-group">
+			<label for="pwd">记忆密码</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Memory Password" value>
+          </div>
+          <div class="form-group">
+            <label for="key">区分代码</label>
+            <input type="text" class="form-control" id="key" placeholder="Distinguish Code" value>
+          </div>
+          <div class="form-group">
+            <label for="options">选项</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="cb_remove" name="cb_remove">
+              <label class="form-check-label" for="cb_remove">
+                移除标点 Remove punctuation
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row justify-content-center">
+              <button class="btn btn-primary" type="button" id="btn_gencode">生成Generate</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="code">加密密码</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="code" placeholder="Encrypted Password" value>
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="btn_copy" data-clipboard-target="#code">Copy</button>
+              </div>
+            </div>
+
+            <script>
+			var hzWeek= new Array("日","一","二","三","四","五","六","日");function cweekday(wday){return hzWeek[wday];}
+
+			function cala()
+			{
+			y=document.getElementById("SY").value;
+			m=document.getElementById("SM").value;
+			d=document.getElementById("SD").value;
+			ddd=document.getElementById("decday").value;
+
+			ttt=new Date(y,m-1,d).getTime()+ddd*24000*3600;
+
+			theday=new Date();
+			theday.setTime(ttt);
+
+			document.getElementById("result1").innerHTML=theday.getFullYear()+"年"+(1+theday.getMonth())+"月"+theday.getDate()+"日"+"星期"+cweekday(theday.getDay());
+			}
+
+			function calb()
+			{
+			y2=document.getElementById("SY2").value;
+			m2=document.getElementById("SM2").value;
+			d2=document.getElementById("SD2").value;
+
+
+			y3=document.getElementById("SY3").value;
+			m3=document.getElementById("SM3").value;
+			d3=document.getElementById("SD3").value;
+
+
+			day2=new Date(y2,m2-1,d2);
+			day3=new Date(y3,m3-1,d3);
+
+			document.getElementById("result2").innerHTML=(day3-day2)/86400000+"天";
+			}
+
+			</script>
+			<br>
+			<b><label for="code">根据日期计算相差天数：</label></b>
+			<br>
+			<label for="code">开始日期：</label>
+			<input size="8" id="SY2" value="2014">年
+			<input size="4" id="SM2" value="1">月
+			<input size="4" id="SD2" value="1">日
+			<br><label for="code">结束日期：</label>
+			<input size="8" id="SY3" value="2021">年
+			<input size="4" id="SM3" value="1">月
+			<input size="4" id="SD3" value="1">日
+			<br>相差天数：
+			<b><span id="result2"> </span></b>
+			<br>
+			<input type="button" value="计算" onclick="calb()">
+			<br>
+			<br>
+			  <script type="text/javascript" src="js/clipboard.min.js"></script>
+			  <script type="text/javascript" src="js/md5.min.js"></script>
+			  <script type="text/javascript" src="src/seek_password.js"></script>
+			  <script type="text/javascript">
+			    var clipboard = new ClipboardJS("#btn_copy");
+			    document.getElementById("btn_gencode").onclick = function() {
+			      var pwd = document.getElementById("pwd").value;
+			      var key = document.getElementById("key").value;
+			      var sk_pwd = generate_password(pwd, key);
+			      if (sk_pwd) {
+					if (document.getElementById("cb_remove").checked == true) {
+			          document.getElementById("code").value = sk_pwd.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, "");
+			        } else {
+			          document.getElementById("code").value = sk_pwd;
+			        }
+			      }
+			    }
+			  </script>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+</div>
+<footer>
+  © 2020
+  <span  class="author"   >
+  Up++
+  </span>
+  
+  <span style="color:#000; font-weight:bold;text-align:center" class="author2">
+    大道至简，实用至上
+  </span>
+
+  <span style=" float:right" class="author"   >
+  <a href="/" target="_blank">Home</a>
+  </span>
+
+
+
+
+
+</footer>
+
+
+
+
+    </div>
+  </body>
+</html>
