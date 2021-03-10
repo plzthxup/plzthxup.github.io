@@ -4,11 +4,11 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   
-  <title>Pom Pom Purin</title>
+  <title>Hook学习笔记1 - Pom Pom Purin</title>
   <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   
-  <meta name="keywords" content=>
+  <meta name="keywords" content=Notes>
   
   
   
@@ -64,43 +64,89 @@
     </ul>
   </nav>
 </header>
-<section class="archive">
-  <h1 class="header"></h1>
-  <ul class="post-archive">
+<!--  新增目录 -->
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+             
+            
+            
+          <p><strong class="toc-title"><a href="#top" >回到顶部</a></strong>  </p>
+    </div>
     
-      <li class="post-item">
-        <time class="post-date">2020-07-04</time>
-        <a class="post-title" href="/hello-world.html">Hello World</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2021-02-01</time>
-        <a class="post-title" href="/Hook%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.html">Hook学习笔记1</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2021-01-11</time>
-        <a class="post-title" href="/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B53D%E6%B8%B8%E6%88%8F%E8%87%AA%E5%8A%A8%E5%AF%BB%E8%B7%AF.html">按键精灵3D游戏自动寻路</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2020-08-03</time>
-        <a class="post-title" href="/heimei.html">黑莓基本攻略</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2020-07-04</time>
-        <a class="post-title" href="/article.html">article</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2020-07-04</time>
-        <a class="post-title" href="/life.html">life</a>
-      </li>
-    
-  </ul>
-</section>
+        
 
+   <script type="text/javascript">
+
+	function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+ <!--  新增目录 -->
+
+
+
+<article class="post">
+  <div class="post-title">
+    <h1 class="article-title">Hook学习笔记1</h1>
+  </div>
+  
+
+  <div class="post-content">
+    
+  </div>
+  <div class="post-meta">
+    <span class="post-time" style="color:#646060;font-size:13px">2021-02-01</span>
+  </div>
+
+  <div class="post-footer">
+    
+      <ul class="post-tag-list" itemprop="keywords"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/tags/Notes/" rel="tag">Notes</a></li></ul>
+    
+
+    <a href="#top" class="top">Back to Top</a>
+  </div>
+<!-- 打赏插件 -->
+
+<!-- 打赏插件 -->
+
+</article>
+
+<!-- 评论插件 -->
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <div id="vcomments"></div>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'd6VBgvuCwC8DGS6mOi8rFwqK-MdYXbMMI',
+        appKey: 'i2xtBw2PVqNHxst4PFIQk3VJ',
+    	avatar:'mp', 
+        placeholder: '风过留痕，最好带上邮箱！' 
+    });
+    </script>
+
+
+
+
+
+
+
+
+<!-- 评论插件 -->
 <footer>
   © 2021
   <span  class="author"   >
@@ -117,7 +163,6 @@
 
    <script>console["\x69\x6e\x66\x6f"]("\u63d0\u793a\u4fe1\u606f\uff1a");console["\x6c\x6f\x67"]("\u4e0d\u8981\u505a\u574f\u4e8b\u54e6\uff0c\n\u5f00\u6e90\x21\u76f4\u63a5\u8054\u7cfb\u90ae\u7bb1\u5c31\u597d\u3002\n");</script>
 </footer>
-
 
     </div>
   </body>
