@@ -170,7 +170,8 @@ a {
 .header .menu {
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #ccc;
+  border-width: 0 0 2px 0;
+  border-bottom: solid #ccc;
   margin-bottom: 25px;
   border-image: linear-gradient(to right, #fffff0, #b22222) 4;
 }
@@ -348,7 +349,8 @@ a {
 }
 footer {
   margin: 0.5em 20px 0 20px;
-  border-top: 2px double #ccc;
+  border-width: 2px 0 0 0;
+  border-top: double #ccc;
   border-image: linear-gradient(to right, #fffff0, #b22222) 4;
   padding: 1em 0 1em 0;
   font-size: 80%;
