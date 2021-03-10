@@ -12,6 +12,12 @@ body {
   background-repeat: no-repeat;
   text-shadow: 0 0 #000;
 }
+@font-face {
+  font-family: 'URW Palladio L';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/urw-palladio-l.woff") format('woff');
+}
 @media (max-width: 1280px) {
   body {
     background-image: none;
