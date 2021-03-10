@@ -17,6 +17,14 @@ body {
     background-image: none;
   }
 }
+@media (max-width: 1023px), (orientation: portrait) {
+  article {
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    padding: 5%;
+  }
+}
 /* Pseudo element: scrollbar (WebKit-only) */
 ::-webkit-scrollbar {
   width: 32px;
