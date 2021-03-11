@@ -19,8 +19,14 @@ body {
 }
 @media (max-width: 1023px), (orientation: portrait) {
   article {
-    position: absolute;
+    position: relative;
     width: 80%;
+    left: 5%;
+    padding: 5%;
+  }
+  .menu {
+    position: relative;
+    width: 90%;
     left: 5%;
     padding: 5%;
   }
