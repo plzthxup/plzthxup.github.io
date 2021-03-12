@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
   
-  <title>Link - Pom Pom Purin</title>
+  <title>d1111 - Pom Pom Purin</title>
   <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   
-  <meta name="keywords" content=>
+  <meta name="keywords" content=hide>
   
   
   
@@ -28,7 +28,7 @@
 
   <body>
     <div class="container">
-      <header class="header">
+      <!-- <header class="header">
   <div class="blog-title">
     <a href="/" class="logo">Pom Pom Purin</a>
     <div class="subtitle"></div>
@@ -73,46 +73,91 @@
       
     </ul>
   </nav>
-</header>
-<div class="page">
-  <div class="page-title">
-    <h1 class="article-title"></h1>
+</header> -->
+<!--  新增目录 -->
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+             
+            
+            
+          <p><strong class="toc-title"><a href="#top" >回到顶部</a></strong>  </p>
+    </div>
+    
+        
+
+   <script type="text/javascript">
+
+	function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+ <!--  新增目录 -->
+
+
+
+<article class="post">
+  <div class="post-title">
+    <h1 class="article-title">d1111</h1>
   </div>
-  <div class="page-content">
-    <h3 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h3><style>
-.links.ssl li {
-position: relative;
-padding-left: 22px;
-}
-.links.ssl li::before {
-content: '';
-display: block;
-position: absolute;
-top: 6px;
-left: 0;
-width: 16px;
-height: 16px;
-background-size: 16px 16px;
-background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD/0lEQVR4Ab2XA5hjOxTHO9batrdce8yrtW2b9dgq1jae1vbueOpn2zbzcoqP06luJ993epXk/0vOOUnK8abkq6Ttb1r2UY8+PJzx4L1DZY8/PrzrxYqySYqsXeEcf5Z+I9r3WlI0MjfzVoKx4Gnaj4XP0pDd/sl/kvq1/HJsxXSxcHP7Hs1bsS4+fSt3RXkt9ZVaz6DyehqpDTTSWI3503bF7+sopDEyqOBxqnks02Mia+IzxTyp1jwZlVSRVlHpS3F3qfWDV49I7TZmFNGdP4rqHj1LIhDn3Es2qfU0Kq0hAfLncVN7pvksTq0fNH+fxSZeVkN+kbSk/0xnddt1jYyanyGSaoz031BfpaO+5U7qyPVavAe3VdeSavIzq3gt+RUe0Qg3Z2wFnol/wSXSl+NuRzQPCfIKYGnOCDn4FHf2H71+8CJP2q7fN3Y/xIrWxKCYWX0SPBZv2SkyPOd+qlFVTyH5lfjaiGYhwZ607y1o07e0mvxBraPRhiMTD3qecsPbDsDB9CtE93ylUMLxouy+EHNLjdsrriXoIluGBrrdMDAoMHjslB7RkGoQ1ROm95wRGBQQFBwSGOqu4fqBC7OGlWuNDKwTH3Qf3KpLUHBgSKPCe8/u5G0+Lri343S0Hk/7e0UVxH9gslfi3ttxepJu59loo7sG9TNvJX5RXEn8hwH+FF+KfQ2/N6zbxz11+9Gl1g0C3Hm/5GB+VRyOeArSDvIZ7mEWIJg8NlU9beurGveFDe7zq+LRa9/cndsgwPU3C09kPYq2Lq+Y/C/xC7FPdpyZdAuT3/HW8EzcVF5NMJRUEdZ+oX/TF7eXOgM4BhWAfFX5aA2HpdK2a1SE4mpCJZ4JB8DiRgEg8meJBWs5LBY8E+fBBW4DzJEJN3s12u5RUQ29x+645HeAntzW3fIfp9bMkQv2NDlAL17rbtn3kusdy+88pXB3UwGAeA8Qh82n8Gka2mue3HQANvEkPYhDmmnNDMK74Va/uKBF27DQlWWjFH1Fbfs4F+dv9UsQtu0a2XrrsQmnD745FSmvJ1RNmNFrEr7Wldc7F2cVIGFxP/rw29MQPoxal2ks/BdcnYuzDBASFhQ0cw9/J5wNi+ynYbjC8ywxf4sTXfaDEIvZIJ4TIA4j3wTvmwrAAbH70NvTfnFn5H5Lw1FEt+Fw9RvAbIlgA6ub0ZnoC24DwL8ffJwSswmAT0Q3SmtcAxyHCvgYhnIfpnyGITJnywQ78Oay21ubLRVsx2cLbXEF8Xvh87TGAW6+U3gq8+FElP80GRU+T0HlOhKp9L5bWT2B148Ua79Zjyciy9dOTkTnKwqogidp76mqZnyjqpzxNdumrp75bfa9lNqK1272d2j+D+LY/CDPYPo9AAAAAElFTkSuQmCC);
-}
-.links li .more {
-color:#999;
-font-size:14px;
-}
-</style>
+  
 
-<ul class="links ssl">
-<li><a href="https://www.baidu.com/" target="_blank" rel="noopener">baidu</a><span class="more">（百度）</span></li> 
-
-</ul>
-
-<h3 id="常用网站"><a href="#常用网站" class="headerlink" title="常用网站"></a>常用网站</h3><ul class="links">
-<li><a href="http://atobe.cn/" target="_blank" rel="noopener">up++ 博客</a></li> 
-<li><a href="https://bbs.pediy.com//" target="_blank" rel="noopener">看雪论坛</a><span class="more">（！！）</span></li> 
-</ul>
-
+  <div class="post-content">
+    
   </div>
-</div>
+  <div class="post-meta">
+    <span class="post-time" style="color:#646060;font-size:13px">2021-03-12</span>
+  </div>
+
+  <div class="post-footer">
+    
+      <ul class="post-tag-list" itemprop="keywords"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/tags/hide/" rel="tag">hide</a></li></ul>
+    
+
+    <a href="#top" class="top">Back to Top</a>
+  </div>
+<!-- 打赏插件 -->
+
+<!-- 打赏插件 -->
+
+<!-- 评论插件 -->
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <div id="vcomments"></div>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'd6VBgvuCwC8DGS6mOi8rFwqK-MdYXbMMI',
+        appKey: 'i2xtBw2PVqNHxst4PFIQk3VJ',
+    	avatar:'mp', 
+        placeholder: '风过留痕，最好带上邮箱！' 
+    });
+    </script>
+
+
+
+
+
+
+
+
+<!-- 评论插件 -->
+</article>
+
+
 <footer>
   © 2021
   <span  class="author"   >
