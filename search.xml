@@ -80,19 +80,6 @@
     
     
     <entry>
-      <title>life</title>
-      <link href="/life.html"/>
-      <url>/life.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/hello-world.html"/>
       <url>/hello-world.html</url>
@@ -106,6 +93,19 @@
             <tag> notes </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>life</title>
+      <link href="/life.html"/>
+      <url>/life.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
       
     </entry>
     
