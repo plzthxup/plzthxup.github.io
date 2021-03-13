@@ -54,8 +54,8 @@ body,
 @media (max-width: 1023px), (orientation: portrait) {
   .container {
     position: absolute;
-    width: 80%;
-    left: 5%;
+    width: 90%;
+    left: 0;
     padding: 5%;
   }
 }
@@ -393,6 +393,19 @@ footer {
 }
 footer .author {
   color: #999;
+}
+footer .author2 {
+  color: #999;
+  float: right;
+}
+@media (max-width: 425px) {
+  footer {
+    text-align: center;
+  }
+  footer .author2 {
+    float: none;
+    display: inline-block;
+  }
 }
 #toc {
   float: right;
