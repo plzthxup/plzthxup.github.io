@@ -143,21 +143,6 @@
   </entry>
   
   <entry>
-    <title>life</title>
-    <link href="https://c2ackberry.com/life.html"/>
-    <id>https://c2ackberry.com/life.html</id>
-    <published>2020-07-04T01:14:59.000Z</published>
-    <updated>2021-03-12T13:57:16.039Z</updated>
-    
-    
-    
-    
-    <category term="Notes" scheme="https://c2ackberry.com/categories/Notes/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://c2ackberry.com/hello-world.html"/>
     <id>https://c2ackberry.com/hello-world.html</id>
@@ -173,6 +158,21 @@
       
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>life</title>
+    <link href="https://c2ackberry.com/life.html"/>
+    <id>https://c2ackberry.com/life.html</id>
+    <published>2020-07-04T01:14:59.000Z</published>
+    <updated>2021-03-12T13:57:16.039Z</updated>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://c2ackberry.com/categories/Notes/"/>
     
     
   </entry>
