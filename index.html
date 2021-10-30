@@ -1,169 +1,455 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<html lang="en" color-mode="light">
 
-  
-  <title>Pom Pom Purin</title>
-  <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  
-  <meta name="keywords" content=>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Up++" />
+  <meta name="description" content="" />
   
   
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon32.ico?v=1.02">
+  <title>
+    
+     Pom Pom Purin
+  </title>
+
   
+    <link rel="apple-touch-icon" href="/images/favicon16.ico">
+    <link rel="icon" href="/images/favicon16.ico">
   
-  <link rel="alternate" href="/true " title="Pom Pom Purin" type="application/atom+xml" href="/atom.xml">
-	  
-	  
-<link rel="stylesheet" href="/css/style.css">
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/color-scheme.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/comments.css">
 
 
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
 
-	<!-- 支持ie8 -->
-   <script src="/js/html5shiv.js"></script>
-   <script src="/js/respond.min.js"></script>
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Pom Pom Purin" type="application/atom+xml">
+</head>
+
 
   <body>
-    <div class="container">
-      <header class="header">
-  <div class="blog-title">
-    <a href="/" class="logo">Pom Pom Purin</a>
-    <div class="subtitle"></div>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img no-lazy src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">Pom Pom Purin</a></div>
   </div>
-<figure class="figure">
-<!-- <img src="/favicon/evolution.png" alt="" style="width:50.0%"><figcaption></figcaption> -->
-</figure>
-
-<div style=" font-family:font-size:.9em;opacity:.75">
-<blockquote>
-<p><em>“He sospechado alguna vez que la única cosa sin misterio es la felicidad, porque se justifica por sí sola.”</em></p>
-</blockquote>
-<p style="text-align:right !important;text-indent:0 !important">– Jorge Luis Borges</p>
-    
-</div>
-  <nav class="navbar">
-    <ul class="menu">
+  <div class="navbar">
+    <ul>
       
-        <li class="menu-item">
-          <a href="/" class="menu-item-link">Home</a>
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/categories/Script/" class="menu-item-link">Script</a>
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/categories/Notes/" class="menu-item-link">Notes</a>
+        <li class="nav-item" data-path="/categories/Script/">
+          <a href="/categories/Script/">Script</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/Link" class="menu-item-link">Link</a>
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/Code/" class="menu-item-link">Code</a>
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/null" class="menu-item-link">Download</a>
+        <li class="nav-item" data-path="https://baidu.com">
+          <a href="https://baidu.com" target="_blank" rel="noopener">Download</a>
         </li>
       
     </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <div class="container index">
+  <div class="post-list">
+    <!-- 遍历渲染文章 -->
+    
+
+      <div class="post-item" title="黑莓基本攻略">
+        <div class="time-m-d">2020-08-03</div>
+        <div class="title">
+          <a href="/heimei.html">
+            
+              
+                <span><span title="Pinned" class="icon iconfont icon-pin-top post-top"></span>黑莓基本攻略</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="post-item" title="1111">
+        <div class="time-m-d">2021-10-30</div>
+        <div class="title">
+          <a href="/1111.html">
+            
+              
+                <span><span title="Pinned" class="icon iconfont icon-pin-top post-top"></span>1111</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="post-item" title="11">
+        <div class="time-m-d">2021-03-12</div>
+        <div class="title">
+          <a href="/%E5%85%B3%E4%BA%8E%E6%96%B0%E6%89%8B%E7%A9%B7%E5%85%BB%E7%8C%AB%E7%9A%84%E5%87%A0%E7%82%B9.html">
+            
+              
+                <span>11</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="post-item" title="按键精灵3D游戏坐标寻路">
+        <div class="time-m-d">2021-01-11</div>
+        <div class="title">
+          <a href="/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B53D%E6%B8%B8%E6%88%8F%E5%9D%90%E6%A0%87%E5%AF%BB%E8%B7%AF.html">
+            
+              
+                <span>按键精灵3D游戏坐标寻路</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="post-item" title="按键精灵3D游戏坐标寻路">
+        <div class="time-m-d">2021-01-11</div>
+        <div class="title">
+          <a href="/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B53D%E6%B8%B8%E6%88%8F%E5%9D%90%E6%A0%87%E5%AF%BB%E8%B7%AF%20-%20%E5%89%AF%E6%9C%AC.html">
+            
+              
+                <span>按键精灵3D游戏坐标寻路</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+  </div>
+  <nav class="post-navigation">
+    
+    <span class="page-num">1 / 1</span>
+    
   </nav>
-</header>
+</div>
 
-<!-- 首页隐藏指定文章 -->
-<section class="archive">
-  <h1 class="header"></h1>
-  <ul class="post-archive">
-    
-   
-    
-      <li class="post-item">
-        <time class="post-date">2020-08-03</time>
-        <a class="post-title" href="/heimei.html">黑莓基本攻略</a>
-      </li>
+        <div class="footer">
+  <div class="social">
+    <ul>
       
+        <li>
+          <a title="email" href="Mailto:atobecn@foxmail.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
       
-    
-   
-    
-      <li class="post-item">
-        <time class="post-date">2021-03-12</time>
-        <a class="post-title" href="/%E5%85%B3%E4%BA%8E%E6%96%B0%E6%89%8B%E7%A9%B7%E5%85%BB%E7%8C%AB%E7%9A%84%E5%87%A0%E7%82%B9.html">11</a>
-      </li>
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
       
-      
-    
-   
-      
-      
-    
-  </ul>
-</section>
-<!-- 首页隐藏指定文章 -->
-
-<!-- backup -->
-<!-- <section class="archive">
-  <h1 class="header"></h1>
-  <ul class="post-archive">
-    
-      <li class="post-item">
-        <time class="post-date">2020-08-03</time>
-        <a class="post-title" href="/heimei.html">黑莓基本攻略</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2021-03-12</time>
-        <a class="post-title" href="/%E5%85%B3%E4%BA%8E%E6%96%B0%E6%89%8B%E7%A9%B7%E5%85%BB%E7%8C%AB%E7%9A%84%E5%87%A0%E7%82%B9.html">11</a>
-      </li>
-    
-      <li class="post-item">
-        <time class="post-date">2021-01-11</time>
-        <a class="post-title" href="/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B53D%E6%B8%B8%E6%88%8F%E5%9D%90%E6%A0%87%E5%AF%BB%E8%B7%AF.html">按键精灵3D游戏坐标寻路</a>
-      </li>
-    
-  </ul>
-</section> -->
-<!-- backup -->
-
-
-<footer>
-  © 2021
-  <span  class="author"   >
-  Up++
-  </span>
+    </ul>
+  </div>
   
-  <span style=" font-weight:bold;text-align:center" class="author">
- <!--    大道至简，实用至上 -->
-  </span>
-
-  <span  class="author2"   >
-  <a href="/atom.xml" one-link-mark="yes"><i class="fa fa-rss-square" aria-hidden="true"></i>&nbsp;Subscribe</a> | 
-  <a href="/About" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;About me</a> |
-  <a href="/"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
-  </span>
-
-   <script>console["\x69\x6e\x66\x6f"]("\u63d0\u793a\u4fe1\u606f\uff1a");console["\x6c\x6f\x67"]("\u4e0d\u8981\u505a\u574f\u4e8b\u54e6\uff0c\n\u5f00\u6e90\x21\u76f4\u63a5\u8054\u7cfb\u90ae\u7bb1\u5c31\u597d\u3002\n");</script>
-</footer>
-
-
-
-
-
-
-
-
-
-
+    <div class="footer-more">
+      
+        <a href="/">Copyright © Up++ 2021</a>
+        
     </div>
-  </body>
+  
+    <div class="footer-more">
+      
+        <a href="https://github.com/zchengsite/hexo-theme-oranges" target="_blank" rel="noopener">Theme by Oranges | Theme modified by Up++  | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+
+      </div>
+    </div>
+  <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>

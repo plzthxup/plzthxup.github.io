@@ -1,127 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<html lang="en" color-mode="light">
 
-  
-  <title>11 - Pom Pom Purin</title>
-  <link rel="icon" href="/favicon/favicon32.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  
-  <meta name="keywords" content=>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Up++" />
+  <meta name="description" content="" />
   
   
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon32.ico?v=1.02">
+  <title>
+    
+      11 
+      
+      
+      |
+    
+     Pom Pom Purin
+  </title>
+
   
+    <link rel="apple-touch-icon" href="/images/favicon16.ico">
+    <link rel="icon" href="/images/favicon16.ico">
   
-  <link rel="alternate" href="/true " title="Pom Pom Purin" type="application/atom+xml" href="/atom.xml">
-	  
-	  
-<link rel="stylesheet" href="/css/style.css">
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/color-scheme.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/comments.css">
 
 
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
 
-	<!-- 支持ie8 -->
-   <script src="/js/html5shiv.js"></script>
-   <script src="/js/respond.min.js"></script>
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Pom Pom Purin" type="application/atom+xml">
+</head>
+
 
   <body>
-    <div class="container">
-      <!-- <header class="header">
-  <div class="blog-title">
-    <a href="/" class="logo">Pom Pom Purin</a>
-    <div class="subtitle"></div>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img no-lazy src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">Pom Pom Purin</a></div>
   </div>
-  
-<div style=" font-family:font-size:.9em;opacity:.75">
-<blockquote>
-<p><em>“Coleridge observes that all men are born Aristotelians or Platonists. The latter feel that classes, orders, and genres are realities; the former, that they are generalizations.<em> </em>.”</em></p>
-</blockquote>
-<p style="text-align:right !important;text-indent:0 !important">– Jorge Luis Borges</p>
-
-  <nav class="navbar">
-    <ul class="menu">
+  <div class="navbar">
+    <ul>
       
-        <li class="menu-item">
-          <a href="/" class="menu-item-link">Home</a>
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/categories/Script/" class="menu-item-link">Script</a>
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/categories/Notes/" class="menu-item-link">Notes</a>
+        <li class="nav-item" data-path="/categories/Script/">
+          <a href="/categories/Script/">Script</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/Link" class="menu-item-link">Link</a>
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/Code/" class="menu-item-link">Code</a>
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
         </li>
       
-        <li class="menu-item">
-          <a href="/null" class="menu-item-link">Download</a>
+        <li class="nav-item" data-path="https://baidu.com">
+          <a href="https://baidu.com" target="_blank" rel="noopener">Download</a>
         </li>
       
     </ul>
-  </nav>
-</header> -->
-<!--  新增目录 -->
-  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-          <span class="btn-bg"></span>
-          <span class="btn-text">文章导航</span>
-          </p>
-    <div id="toc-article" class="toc-article">
-        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-        <strong class="toc-title">文章目录</strong>
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0x00"><span class="toc-number">1.</span> <span class="toc-text">0x00 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新手养猫"><span class="toc-number">1.0.1.</span> <span class="toc-text">新手养猫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正片"><span class="toc-number">1.0.2.</span> <span class="toc-text">正片</span></a></li></ol></li></ol></li></ol> 
-            
-            
-          <p><strong class="toc-title"><a href="#top" >回到顶部</a></strong>  </p>
-    </div>
-    
-        
-
-   <script type="text/javascript">
-
-	function showToc(){
-        var toc_article = document.getElementById("toc-article");
-        var show_toc_btn = document.getElementById("show-toc-btn");
-        toc_article.setAttribute("style","display:block");
-        show_toc_btn.setAttribute("style","display:none");
-        };
-    function showBtn(){
-        var toc_article = document.getElementById("toc-article");
-        var show_toc_btn = document.getElementById("show-toc-btn");
-        toc_article.setAttribute("style","display:none");
-        show_toc_btn.setAttribute("style","display:block");
-        };
-   </script>
- <!--  新增目录 -->
-
-
-
-<article class="post">
-  <div class="post-title">
-    <h1 class="article-title">11</h1>
   </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
   
 
-  <div class="post-content">
-    <blockquote>
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">11</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-03-12 22:32:37
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <blockquote>
 <p>尽量少一点图片 纯文字简洁明了 </p>
 </blockquote>
 <hr>
-<h1 id="0x00"><a href="#0x00" class="headerlink" title="0x00 "></a>0x00 </h1><p>先来说一下自己，16年末开始准备，了解养猫的基础<br>17年3月开始养猫  养的是英短蓝，因为当初答应好朋友生小猫了送他，其实之后我是后悔的，（能绝育就应该绝育，真的没必要） 自己的猫比较信任我，要生的时候来来喊我，一直对着我叫，让我帮忙，守在它旁边十小时亲自接生剪脐带过一窝小猫经历(有空的话会专门写一篇讲接生)<br>工作单位旁捡了一只田园，同时养过6只猫。最后经济压力比较大，花了尽7个月为三只仔挑选了主人后赠送（所有猫均打好猫三联驱虫等基本工作）<br>得出 结论 尽量还是不要免费送猫  尽管你考量了很久猫主人，养不了卖宠物店就好（不是所有人都是养孩子那样的，很多都是一时兴起）<br>鉴于以上亲身经历，花了挺多冤枉钱的，博览互联网，还是有一些“穷养猫”的经验可以借鉴给大家的</p>
+<h1 id="0x00"><a href="#0x00" class="headerlink" title="0x00 "></a>0x00 </h1><p>$<del>$先来说一下自己，16年末开始准备，了解养猫的基础<br>17年3月开始养猫  养的是英短蓝，因为当初答应好朋友生小猫了送他，其实之后我是后悔的，（能绝育就应该绝育，真的没必要） 自己的猫比较信任我，要生的时候来来喊我，一直对着我叫，让我帮忙，守在它旁边十小时亲自接生剪脐带过一窝小猫经历(有空的话会专门写一篇讲接生)<br>工作单位旁捡了一只田园，同时养过6只猫。最后经济压力比较大，花了尽7个月为三只仔挑选了主人后赠送（所有猫均打好猫三联驱虫等基本工作）<br>得出 结论 尽量还是不要免费送猫<br>$</del>$尽管你考量了很久猫主人，养不了卖宠物店就好（不是所有人都是养孩子那样的，很多都是一时兴起）<br>鉴于以上亲身经历，花了挺多冤枉钱的，博览互联网，还是有一些“穷养猫”的经验可以借鉴给大家的</p>
 <h3 id="新手养猫"><a href="#新手养猫" class="headerlink" title="新手养猫"></a>新手养猫</h3><ol>
 <li>你是否合适养猫<br>因为比较重要，我得反复强调一下。  虽然猫真的很适合懒人养的，也不用溜，你从小会教，培养就真的除了倒到猫粮，铲铲屎，她什么都可以自理。<br>但是你一定养猫之前要认真考虑一下你是否有能力去养，尤其是能不能一直陪在身边的，有问题可以及时处理的。家里有情况的，比如家长反对的，可能猫毛会过敏啊等等。或者学生在外读书的我是不建议养的，可以等有工作能力了，在家有话语权了再养<br>你假设运气不好，养猫就是提高让你体验带孩子的感觉。有些猫经常生病出问题，尤其猫舍出来的，我第一只猫猫舍买的，一直家养。可能从小环境不好经常出小毛病，一直把我对药品的知识水平都提高了说真的。生的那几个仔一点病没得过</li>
 <li>假设你真的爱猫，不要给猫划等级<br>猫基本上都是越养越好看的，对于我个人而言不管我咋夸别人的猫好看，在我心里我自己的猫才是最好看。<br>猫真不单单是宠物，她能陪你十年啊。<br>我对于我第一只猫估计是真爱了，他生的仔仔，我的多是爱屋及乌了，所以养猫的话，我建议最多两只，有个伴就好</li>
@@ -156,71 +186,354 @@
 
 <p>眼睛<br>氯霉素（得过结膜炎的人应该知道吧，不能长期滴的） 红霉素眼高 </p>
 <ul>
-<li><input disabled type="checkbox"> 关于</li>
+<li><input disabled="" type="checkbox"> 关于</li>
 </ul>
-<dl><dt>First Term</dt><dd>This is the definition of the first term.</dd></dl><dl><dt>Second Term<br>: This is one definition of the second term.</dt><dd>This is another definition of the second term.</dd></dl><p><a href="http://bruce-sha.github.io/" target="_blank" rel="noopener">不如</a><br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" alt="GitHub Octocat"></p>
-<p><a href="http://ibruce.info/" target="_blank" rel="noopener">http://ibruce.info</a><br><a href="mailto:&#x62;&#117;&#46;&#114;&#117;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;">&#x62;&#117;&#46;&#114;&#117;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;</a></p>
+<dl><dt>First Term</dt><dd>This is the definition of the first term.</dd></dl><dl><dt>Second Term<br>: This is one definition of the second term.</dt><dd>This is another definition of the second term.</dd></dl><p><a href="http://bruce-sha.github.io/" target="_blank" rel="noopener">不如</a><br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" alt="GitHub Octocat"></p>
+<p><a href="http://ibruce.info/" target="_blank" rel="noopener">http://ibruce.info</a><br><a href="mailto:&#x62;&#117;&#46;&#114;&#117;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#x62;&#117;&#46;&#114;&#117;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a></p>
 <!-- 注释 -->
-  </div>
-  <div class="post-meta">
-    <span class="post-time" style="color:#646060;font-size:13px">2021-03-12</span>
-  </div>
-
-  <div class="post-footer">
-    
-
-    <a href="#top" class="top">Back to Top</a>
-  </div>
-<!-- 打赏插件 -->
-
-<!-- 打赏插件 -->
-
-<!-- 评论插件 -->
-
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <div id="vcomments"></div>
-    <script>
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'd6VBgvuCwC8DGS6mOi8rFwqK-MdYXbMMI',
-        appKey: 'i2xtBw2PVqNHxst4PFIQk3VJ',
-    	avatar:'mp', 
-        placeholder: '风过留痕，最好带上邮箱！' 
-    });
-    </script>
-
-
-
-
-
-
-
-
-<!-- 评论插件 -->
-</article>
-
-
-<footer>
-  © 2021
-  <span  class="author"   >
-  Up++
-  </span>
-  
-  <span style=" font-weight:bold;text-align:center" class="author">
- <!--    大道至简，实用至上 -->
-  </span>
-
-  <span  class="author2"   >
-  <a href="/atom.xml" one-link-mark="yes"><i class="fa fa-rss-square" aria-hidden="true"></i>&nbsp;Subscribe</a> | 
-  <a href="/About" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;About me</a> |
-  <a href="/"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
-  </span>
-
-   <script>console["\x69\x6e\x66\x6f"]("\u63d0\u793a\u4fe1\u606f\uff1a");console["\x6c\x6f\x67"]("\u4e0d\u8981\u505a\u574f\u4e8b\u54e6\uff0c\n\u5f00\u6e90\x21\u76f4\u63a5\u8054\u7cfb\u90ae\u7bb1\u5c31\u597d\u3002\n");</script>
-</footer>
-
-
-
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/%E6%8C%89%E9%94%AE%E7%B2%BE%E7%81%B53D%E6%B8%B8%E6%88%8F%E5%9D%90%E6%A0%87%E5%AF%BB%E8%B7%AF.html" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-03-12 22:32:37
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/1111.html" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
     </div>
-  </body>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0x00"><span class="toc-text">0x00 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新手养猫"><span class="toc-text">新手养猫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正片"><span class="toc-text">正片</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <div id="vcomments"></div>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'd6VBgvuCwC8DGS6mOi8rFwqK-MdYXbMMI',
+      appKey: 'i2xtBw2PVqNHxst4PFIQk3VJ',
+      placeholder: 'Welcome!',
+      avatar: 'retro',
+      lang: 'en'
+    })
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="email" href="Mailto:atobecn@foxmail.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a href="/">Copyright © Up++ 2021</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a href="https://github.com/zchengsite/hexo-theme-oranges" target="_blank" rel="noopener">Theme by Oranges | Theme modified by Up++  | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+
+      </div>
+    </div>
+  <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>
