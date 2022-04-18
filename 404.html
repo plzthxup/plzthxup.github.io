@@ -458,7 +458,7 @@ h
 
 
 
-<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
 
 <div id="waline">
 
@@ -468,14 +468,16 @@ h
 
 Waline({
   el: '#waline',
-  placeholder: '要文明评论',
-  avatar: 'mm',
+
+
   pageSize: '10',
-  lang: 'zh-cn',
+  lang: 'zh-CN',
+  login: 'enable',
   visitor: 'false',
   comment_count: 'true',
-
-  serverURL: 'https://railway-starter-production-be0e.up.railway.app'
+  path: 'window.location.pathname',
+  uploadImage: 'false',
+  serverURL: 'https://yy.c2ackberry.com/'
       
       
      
