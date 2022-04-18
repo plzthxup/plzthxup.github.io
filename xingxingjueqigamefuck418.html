@@ -197,29 +197,32 @@ MathJax = {
 
 
 
-  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
-  <div id="vcomments"></div>
 
-  <script>
-    new Waline({
-      el: '#vcomments',
-      serverURL: 'https://railway-starter-production-fbff.up.railway.app/',
-      placeholder: '要文明评论',
-      avatar: 'mm',
-      meta: 'nick,mail,link',
-      pageSize: '10',
-      lang: 'en'
-      visitor: 'false',
-      comment_count: 'true',
-      requiredFields: 'nick',
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 
- 
-    })
-  </script>
+<div id="waline">
 
-    <style>
-   
-    </style>
+</div>
+
+<script>
+
+Waline({
+  el: '#waline',
+  placeholder: '要文明评论',
+  avatar: 'mm',
+  pageSize: '10',
+  lang: 'zh-cn',
+  visitor: 'false',
+  comment_count: 'true',
+
+  serverURL: 'https://railway-starter-production-fbff.up.railway.app'
+      
+      
+     
+});
+
+</script>
+
 
 
 
