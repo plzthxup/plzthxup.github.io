@@ -221,26 +221,36 @@ font-size:14px;
         
 
 
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
+
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
   <div id="vcomments"></div>
 
   <script>
-    new Valine({
+    new Waline({
       el: '#vcomments',
-      appId: 'd6VBgvuCwC8DGS6mOi8rFwqK-MdYXbMMI',
-      appKey: 'i2xtBw2PVqNHxst4PFIQk3VJ',
-      placeholder: 'Welcome!',
-      avatar: 'retro',
+      serverURL: 'https://railway-starter-production-fbff.up.railway.app/',
+      placeholder: '要文明评论',
+      avatar: 'mm',
+      meta: 'nick,mail,link',
+      pageSize: '10',
       lang: 'en'
+      visitor: 'false',
+      comment_count: 'true',
+      requiredFields: 'nick',
+
+ 
     })
   </script>
 
     <style>
-      .comments-container .v .vempty {
-        display: none!important;
-      }
+   
     </style>
+
+
+
+
+
 
 
 
